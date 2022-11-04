@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+class scanner{
+
+public static void main (String args[]){
+
+System.out.println("Enter stuff:");
+Scanner input = new Scanner(System.in);
+
+int x = input.nextInt();
+float f = input.nextFloat();
+double d = input.nextDouble();
+char c = input.next().charAt(0);
+String s = input.next();
+System.out.printf (x+""+f+""+d+""+c+""+s);
+}
+}
