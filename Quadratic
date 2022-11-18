@@ -20,8 +20,8 @@ System.out.println("Not a quadratic equation");
 }
 
 else if (d>0){
-root1=(-b+Math.sqrt(d))/(4*a*c);
-root2=(-b-Math.sqrt(d))/(4*a*c);
+root1=(-b+Math.sqrt(d))/(2*a);
+root2=(-b-Math.sqrt(d))/(2*a);
 System.out.println("Real and distinct roots are:"+root1+" and "+root2);
 }
 else if(d<0){
