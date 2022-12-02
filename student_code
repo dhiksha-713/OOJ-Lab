@@ -38,13 +38,13 @@ public class Student {
         System.out.printf("USN: "+USN+"\tName: "+name);
         System.out.printf("\nCredits: ");
 
-        for (int i=0; i<3; i++){
+        for (int i=0; i<size; i++){
             System.out.printf("%d\t",credits[i]);
         }
 
         System.out.printf("\nMarks: ");
 
-        for (int i=0; i<3; i++){
+        for (int i=0; i<size; i++){
             System.out.printf("%d\t",marks[i]);
         }
     }
@@ -98,27 +98,7 @@ class stud {
         Scanner ss = new Scanner (System.in);
         Student s1 = new Student();
 
-        while (x==0){
-
-            System.out.printf("\n1:Input\t2:Display\t3:Calculate\t4:Exit\n");
-            choice = ss.nextInt();
-
-            switch (choice){
-
-                case 1:s1.input();
-                break;
-
-                case 2:s1.display();
-                break;
-
-                case 3:System.out.println("SGPA is= "+s1.sgpa());
-                break;
-
-                case 4: x=1;
-                break;
-            }
-        }
-
-        ss.close();
-    }
+        s1.input();
+        s1.display();
+        System.out.println ("SGPA= "+s1.sgpa());
 }
