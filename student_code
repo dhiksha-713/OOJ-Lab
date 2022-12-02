@@ -22,12 +22,12 @@ public class Student {
         credits = new int[size];
         marks = new int[size];
 
-        System.out.println("Enter credits of "+size+"subjects:");
+        System.out.println("Enter "+size+" credits: ");
 
         for (int i=0; i<size; i++){
             credits[i] = s.nextInt();
         }
-        System.out.println("Enter marks for the "+size+"subjects:");
+        System.out.println("Enter "+size+" marks: ");
         for (int i=0; i<size; i++){
             marks[i] = s.nextInt();
         }
