@@ -77,6 +77,7 @@ class Savings extends Account{
 }
 class Bank{
     public static void main(String[] args) {
+        System.out.println ("IF YOU COPY I WILL FIND YOU!");
         int choice, x=0;
         Scanner s = new Scanner(System.in);
 
@@ -88,10 +89,10 @@ class Bank{
             case 1:Current c1 = new Current();
 
             while (x==0){
-
+                System.out.println ("IF YOU COPY I WILL FIND YOU!");
                 System.out.printf("\n1:Deposit\n2:Withdraw\n3:Display balance\n4:Exit\n");
                 choice = s.nextInt();
-
+    
                 switch (choice){
 
                     case 1:c1.deposit();
@@ -115,7 +116,7 @@ class Bank{
             case 2:Savings s1 = new Savings();
 
             while (x==0){
-
+                System.out.println ("IF YOU COPY I WILL FIND YOU!");
                 System.out.printf("\n1:Deposit\n2:Withdraw\n3:Display balance\n");
                 choice = s.nextInt();
 
